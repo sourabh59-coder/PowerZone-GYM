@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>PowerZone GMY</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">PowerZone GYM</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact Us</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Gym Machines
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Treadmils</a></li>
+              <li><a class="dropdown-item" href="#">Horizontal Seated leg press</a></li>
+              <li><a class="dropdown-item" href="#">Lat Pulldown</a></li>
+              <li><a class="dropdown-item" href="#">Cable Biceps Bar</a></li>
+              <li><a class="dropdown-item" href="#">Cable Triceps Bar</a></li>
+              <li><a class="dropdown-item" href="#">Chest Press</a></li>
+              <li><a class="dropdown-item" href="#">Hanging leg raise</a></li>
+              <li><a class="dropdown-item" href="#">cardi : Rowing Machine</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Crunch Machine</a></li>
+              <li><a class="dropdown-item" href="#">Seated Leg Extension</a></li>
+              <li><a class="dropdown-item" href="#">Seated Hamstring Curl Machine</a></li>
+              <li><a class="dropdown-item" href="#">Chets Fly Machine</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- login modal -->
+  
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">login to PowerZone</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text"></div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Not a robot</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- signUp modal     -->
+
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Get a PowerZone account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+              <input type="name" class="form-control" id="inputName3">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Contact Number</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" id="inputNumber3">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Confirm Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3">
+            </div>
+          </div>
+          <fieldset class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  Male
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Female
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <div class="row mb-3">
+            <div class="col-sm-10 offset-sm-2">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Accepts T&C
+                </label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://source.unsplash.com/1700x600/?gym" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>High Tech Gymming Machines</h2>
+          <p>Exercise equipment is any apparatus or device used during physical activity to enhance the strength or
+            conditioning effects of that exercise by providing either fixed or adjustable amounts of resistance, or to
+            otherwise enhance the experience or outcome of an exercise routine.</p>
+          <button class="btn btn-primary">Chest</button>
+          <button class="btn btn-danger">Back</button>
+          <button class="btn btn-success">Biceps</button>
+          <button class="btn btn-primary">Triceps</button>
+          <button class="btn btn-danger">Shoulders</button>
+          <button class="btn btn-success">Legs</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/1700x600/?workout" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Proper Diet Chart</h5>
+          <p>A healthy lifestyle can be attained by maintaining a balanced diet and keeping into consideration to meet
+            all the essential nutrients required by the body. A proper meal plan helps to attain ideal body weight and
+            reduce the risk of chronic diseases like diabetes, cardiovascular and other types of cancer.</p>
+          <button class="btn btn-primary">Weight loss</button>
+          <button class="btn btn-danger">Six Packs</button>
+          <button class="btn btn-success">Maintain Shape</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/1700x600/?trainer" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Experienced GYM Trainner</h2>
+          <p>A fitness trainer is someone who leads, instructs, and motivates individuals or groups in exercise
+            activities, including cardiovascular exercise (exercises for the heart and blood system), strength training,
+            and stretching. They work with people of all ages and skill levels.</p>
+          <button class="btn btn-primary">Male</button>
+          <button class="btn btn-danger">Female</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/1700x600/?gym essential" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Protein Powders</h5>
+          <p>Protein powder is a popular nutritional supplement. Protein is an essential macronutrient that helps build
+            muscle, repair tissue, and make enzymes and hormones. Using protein powder may also aid weight loss and help
+            people tone their muscles.</p>
+          <button class="btn btn-primary">Weight Gainer</button>
+          <button class="btn btn-success">Mass Gainer</button>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+
+  <div class="container my-4 mx-4">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">-Key to Success</strong>
+            <h3 class="mb-0">Discipine</h3>
+            <div class="mb-1 text-muted">~Self discipline is key ingredient to success</div>
+            <p class="card-text mb-auto">If you want to get more disciplined with your exercise, set goals that will
+              force you to take the action of exercising, not ones that are the potential result of exercising. Action
+              Step: Make sure your goals are time-bound, too. For example, give yourself the goal of “exercising three
+              times per week for one month”.
+            </p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="250" height="350"
+              src="https://source.unsplash.com/1600x900/?discipline" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">-Resolution</strong>
+            <h3 class="mb-0">Regularity</h3>
+            <div class="mb-1 text-muted">~Slow and steady wins the race</div>
+            <p class="mb-auto">Including physical activity into your everyday patterns and weaving movement into your
+              lifestyle on a regular basis is one massive attribute to staying fit and living at a weight that you are
+              happy with. It’s not about working out two hours a day seven days a week, it’s about taking each day as it
+              comes and striving for development and change in the ways and means of getting and staying fit and
+              healthy.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="250" height="350"
+              src="https://source.unsplash.com/1600x900/?regularity" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">-Complete Devotion</strong>
+            <h3 class="mb-0">Hard Work</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">You’ve been working hard in the gym day in and day out, but your just not
+              seeing the results you expected. Believe it or not, you’re not alone. I hear this gripe often, whether
+              it’s from people I meet in person, or through the questions I get on Snapchat and the other social
+              networks I am on. Luckily, I’ve amassed some fitness and nutrition knowledge over the years and I’ve got
+              the know-how to get you over the hurdle.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="250" height="350"
+              src="https://source.unsplash.com/1600x900/?hard work" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">-Belive in the hard work</strong>
+            <h3 class="mb-0">Faith</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">Even if you don’t know the difference between a dumbbell or barbell, or you think a good
+              warm-up routine consists of cranking up some classic 80s beats and donning a purple and pink sweat suit,
+              you probably know that people start working out because they want to improve themselves. It may be about
+              getting stronger and bigger, leaner and healthier, or any number of things.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="250" height="350" src="https://source.unsplash.com/1600x900/?faith"
+              alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container py-5">
+    <div class="row">
+      <div class="col-12 col-md">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img"
+          viewBox="0 0 24 24">
+          <title>Product</title>
+          <circle cx="12" cy="12" r="10"></circle>
+          <path
+            d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94">
+          </path>
+        </svg>
+        <small class="d-block mb-3 text-muted">© 2017–2021</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Features</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Cool stuff</a></li>
+          <li><a class="link-secondary" href="#">Random Exercises</a></li>
+          <li><a class="link-secondary" href="#">Team work</a></li>
+          <li><a class="link-secondary" href="#">Stuff for beginners</a></li>
+          <li><a class="link-secondary" href="#">Maintained clealyness</a></li>
+          <li><a class="link-secondary" href="#">New Machinery</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Contact Numbers :- </h5>
+        <ul class="list-unstyled text-small">
+          <li>Kelli :- 9826549575</li>
+          <li>Jhon :- 8975486715</li>
+        </ul>
+        <h5>Emails us :- </h5>
+        <ul class="list-unstyled text-small">
+          <li>Kelli :- kelli895_bell@PowerZone.com</li>
+          <li>Jhon :- jhon_789@PowerZone.com</li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Colaboration</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Business</a></li>
+          <li><a class="link-secondary" href="#">Donate</a></li>
+          <li><a class="link-secondary" href="#">PartnerShip</a></li>
+          <li><a class="link-secondary" href="#">Trainer</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Team</a></li>
+          <li><a class="link-secondary" href="#">Locations</a></li>
+          <li><a class="link-secondary" href="#">Privacy</a></li>
+          <li><a class="link-secondary" href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
